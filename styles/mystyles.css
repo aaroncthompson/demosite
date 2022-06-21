@@ -33,6 +33,30 @@ footer {clear: both; color: blue; text-align: center;}
 	background-color: #D3D3D3;	
         border-radius: 5px;
 	padding: 5px;
+	overflow-y: scroll;
+	height: 80%;
+}
+
+.question {
+	font-weight: bold;
+}
+
+.choices {
+	height: 50px;
+	border: none;
+	overflow: hidden;
+}
+
+.choices option {
+	width: 75px;
+	padding: 10px 0;
+	text-align: center;
+	margin-right: 5px;
+	display: inline-block;
+	cursor: pointer;
+	border: blue solid 1px;
+	border-radius: 5px;
+	color: blue;
 }
 
 .bail {float:right;}

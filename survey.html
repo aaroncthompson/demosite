@@ -37,31 +37,91 @@
 <div class="overlay" id="surveyOverlay">
 	<p>Thanks for taking my survey! I'll just be asking a few questions about your likes and dislikes.</p>
 	<p>First, some questions about you:
-	<p>1. What is your age range?</p>
-	<p>(selectable buttons for age ranges go here)</p>
-	<p>2. What gender do you identify as?</p>
-	<p>(selectable buttons for male, female, bigender, non-binary</p>
+	<p class="question">1. What is your age range?</p>
+	<select class="choices" id="ageQ" multiple>
+		<option value="0">under 18</option>
+		<option value="1">18 to 25</option>
+		<option value="2">26 to 44</option>
+		<option value="3">45 to 59</option>
+		<option value="4">60 or over</option>
+	</select>
+	<p class="question">2. What gender do you identify as?</p>
+        <select class="choices" id="genQ" multiple>
+                <option value="0">Male</option>
+                <option value="1">Female</option>
+                <option value="2">Bigender</option>
+                <option value="3">Nonbinary</option>
+        </select>
 	<p>Next, I'll ask you how you feel about some things on a scale from 1 to 5, with 1 meaning "I hate this!" and 5 meaning "I love this!"</p>
-	<p>3. How do you feel about <b>books</b>?</p>
-	<p>(selectable buttons from 1 to 5)</p>
-	<p>4. How do you feel about <b>TV series</b>?</p>
-        <p>(selectable buttons from 1 to 5)</p>
-        <p>5. How do you feel about <b>films</b>?</p>
-        <p>(selectable buttons from 1 to 5)</p>
-        <p>6. How do you feel about <b>blogs</b>?</p>
-        <p>(selectable buttons from 1 to 5)</p>
-        <p>7. How do you feel about <b>animals</b>?</p>
-        <p>(selectable buttons from 1 to 5)</p>
-        <p>8. How do you feel about <b>cars</b>?</p>
-        <p>(selectable buttons from 1 to 5)</p>
-        <p>9. How do you feel about <b>trains</b>?</p>
-        <p>(selectable buttons from 1 to 5)</p>
-        <p>10. How do you feel about <b>̤̠͍̤̘̥Ẓ̘̮̥̟͢A̺͍̤̥̫L̛̫̞G͎͙̩͙͈̦͚͜O̴̖͉̦͎͕</b>?</p>
-        <p>(selectable buttons from 1 to 5)</p>
+	<p class="question">3. How do you feel about <b>books</b>?</p>
+        <select class="choices" id="bookQ" multiple>
+                <option value="0">1</option>
+                <option value="1">2</option>
+                <option value="2">3</option>
+                <option value="3">4</option>
+		<option value="4">5</option>
+        </select>
+	<p class="question">4. How do you feel about <b>TV series</b>?</p>
+        <select class="choices" id="tvQ" multiple>
+                <option value="0">1</option>
+                <option value="1">2</option>
+                <option value="2">3</option>
+                <option value="3">4</option>
+                <option value="4">5</option>
+        </select>
+	<p class="question">5. How do you feel about <b>films</b>?</p>
+        <select class="choices" id="filmQ" multiple>
+                <option value="0">1</option>
+                <option value="1">2</option>
+                <option value="2">3</option>
+                <option value="3">4</option>
+                <option value="4">5</option>
+        </select>
+	<p class="question">6. How do you feel about <b>blogs</b>?</p>
+        <select class="choices" id="blogQ" multiple>
+                <option value="0">1</option>
+                <option value="1">2</option>
+                <option value="2">3</option>
+                <option value="3">4</option>
+                <option value="4">5</option>
+        </select>
+	<p class="question">7. How do you feel about <b>animals</b>?</p>
+        <select class="choices" id="animalQ" multiple>
+                <option value="0">1</option>
+                <option value="1">2</option>
+                <option value="2">3</option>
+                <option value="3">4</option>
+                <option value="4">5</option>
+        </select>
+	<p class="question">8. How do you feel about <b>cars</b>?</p>
+        <select class="choices" id="carQ" multiple>
+                <option value="0">1</option>
+                <option value="1">2</option>
+                <option value="2">3</option>
+                <option value="3">4</option>
+                <option value="4">5</option>
+        </select>
+	<p class="question">9. How do you feel about <b>trains</b>?</p>
+        <select class="choices" id="trainQ" multiple>
+                <option value="0">1</option>
+                <option value="1">2</option>
+                <option value="2">3</option>
+                <option value="3">4</option>
+                <option value="4">5</option>
+        </select>
+	<p class="question">10. How do you feel about <b>̤̠͍̤̘̥Ẓ̘̮̥̟͢A̺͍̤̥̫L̛̫̞G͎͙̩͙͈̦͚͜O̴̖͉̦͎͕</b>?</p>
+        <select class="choices" id="zalgoQ" multiple>
+                <option value="0">1</option>
+                <option value="1">2</option>
+                <option value="2">3</option>
+                <option value="3">4</option>
+                <option value="4">5</option>
+        </select>
 
-<!-- maybe some rate from 1-5 on stuff -->
+	<p><button class="submit" onclick="submitSurvey()">Submit</button></p>
 <!-- after the user fills out the form and hits submit, responses given by the user should be sent to a database (on-instance mysql / athena), the 
 form should close, then a button should pop up at the bottom-right to take them to another page which will feature various analytics based on the data provided thus far. -->
+	<!-- figure out how to make this button float at the bottom right regardless of scroll -->
 	<button class="bail" onclick="hideSurvey()">Never mind, take me back!</button>
 </div>
 
