@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<meta charset=utf-8>
+<html lang=en>
+
+<title>Aaron's very cool website - Survey</title>
+<link href="styles/mystyles.css" rel="stylesheet">
+
+<header>Survey</header>
+
+<nav>
+        <h2>Navigation</h2>
+        <ul>
+                <li><a href="index.html">Main Page</a></li>
+                <li>Survey</li>
+                <li><a href="aboutme.html">About me</a></li>
+        </ul>
+        <p style="text-align:center;"><img src="img/토토로.jpg" width="200px" title="トトロしか勝たん" alt="An impossibly cute grey and white cat." /></p>
+</nav>
+
+<h2>Welcome to the survey!</h2>
+
+<!-- give the day of the week. if it is wednesday, add "my dudes". if it is friday, add ", friday". on some event, make it claim the user has activated wumbo mode
+
+<article>
+	<script>
+		document.write("It is currently " + Date.getDay();
+	</script>
+</article>
+-->
+
+<article>Click this button to start taking the survey. </br></br>
+	<!-- This button should spawn the form as an overlay. -->
+	<button id="surveyButton" onclick="showSurvey()">Let's get started!</button>
+	<script src="js/myscript.js"></script>
+</article>
+
+<div class="overlay" id="surveyOverlay">
+	<p>Thanks for taking my survey! I'll just be asking a few questions about your likes and dislikes.</p>
+	<p>First, some questions about you:
+	<p>1. What is your age range?</p>
+	<p>(selectable buttons for age ranges go here)</p>
+	<p>2. What gender do you identify as?</p>
+	<p>(selectable buttons for male, female, bigender, non-binary</p>
+	<p>Next, I'll ask you how you feel about some things on a scale from 1 to 5, with 1 meaning "I hate this!" and 5 meaning "I love this!"</p>
+	<p>3. How do you feel about <b>books</b>?</p>
+	<p>(selectable buttons from 1 to 5)</p>
+	<p>4. How do you feel about <b>TV series</b>?</p>
+        <p>(selectable buttons from 1 to 5)</p>
+        <p>5. How do you feel about <b>films</b>?</p>
+        <p>(selectable buttons from 1 to 5)</p>
+        <p>6. How do you feel about <b>blogs</b>?</p>
+        <p>(selectable buttons from 1 to 5)</p>
+        <p>7. How do you feel about <b>animals</b>?</p>
+        <p>(selectable buttons from 1 to 5)</p>
+        <p>8. How do you feel about <b>cars</b>?</p>
+        <p>(selectable buttons from 1 to 5)</p>
+        <p>9. How do you feel about <b>trains</b>?</p>
+        <p>(selectable buttons from 1 to 5)</p>
+        <p>10. How do you feel about <b>̤̠͍̤̘̥Ẓ̘̮̥̟͢A̺͍̤̥̫L̛̫̞G͎͙̩͙͈̦͚͜O̴̖͉̦͎͕</b>?</p>
+        <p>(selectable buttons from 1 to 5)</p>
+
+<!-- maybe some rate from 1-5 on stuff -->
+<!-- after the user fills out the form and hits submit, responses given by the user should be sent to a database (on-instance mysql / athena), the 
+form should close, then a button should pop up at the bottom-right to take them to another page which will feature various analytics based on the data provided thus far. -->
+	<button class="bail" onclick="hideSurvey()">Never mind, take me back!</button>
+</div>
+
+<article>Click this button to view some analytics about the responses to the survey. </br></br>
+	<button id="analyticsButton" onclick="showAnalytics()">Show me!</button>
+</article>
+
+<div class="overlay" id="analyticsOverlay">
+	<p>this is the analytics</p>
+	<button class="bail" onclick="hideAnalytics()">Neat! Take me back.</button>
+</div>
+
+<footer><hr>Aaron Thompson, 2022</footer>
+
+</html>
